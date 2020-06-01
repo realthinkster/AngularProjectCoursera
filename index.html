@@ -10,8 +10,14 @@
 </head>
 
 <body>
+    <h1>My First Angular Js APP</h1>
     <div ng-controller="myFirstcontroller">
-
+        <div>
+            Type any text<input type="text" ng-model="name" ng-keyup="displayNumericValue();" />
+        </div>
+        <div>
+            The numeric value of the text you typed: {{totalValue}}
+        </div>
     </div>
 </body>
 
